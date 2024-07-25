@@ -1,0 +1,559 @@
+/* Estilos generales */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #333;
+    background-image: url('https://i.pinimg.com/originals/87/19/04/8719042194d4d81e7f9f900b61e6d1cf.gif'); /* Fondo de patrón */
+    background-repeat: repeat; /* Repetir el patrón */
+    background-size: auto; /* Ajuste del tamaño del patrón */
+    cursor: url('cursor\ \(1\).cur'), auto; /* Cursor personalizado */
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #ff66b2;
+    padding: 30px 0;
+    border-bottom: 5px solid #ff3366;
+    box-shadow: 0 0 20px #ff3366;
+    text-align: center;
+}
+
+header .logo {
+    max-width: 700px;
+    height: auto;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    padding: 12px 20px;
+    border-radius: 30px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #ff3366;
+    box-shadow: 0 0 10px #ff3366;
+}
+
+main {
+    padding: 60px 0;
+}
+
+.intro {
+    text-align: center;
+    margin: 60px auto;
+    background: linear-gradient(135deg, #ff66b2, #ff3366);
+    padding: 60px 20px;
+    border-radius: 30px;
+    box-shadow: 0 0 20px #ff3366;
+    max-width: 900px;
+}
+
+.intro h2 {
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.intro p {
+    font-size: 20px;
+    margin: 20px auto;
+    color: #fff;
+    max-width: 800px;
+}
+
+/* Sección de Servicios Destacados */
+.services {
+    text-align: center;
+    margin: 60px 0;
+}
+
+.services h2 {
+    font-weight: 700;
+    color: #ff3366;
+    margin: 40px 0;
+    padding: 20px 40px;
+    border-radius: 30px;
+    font-family: 'Lobster', cursive;
+    font-size: 2.5rem;
+    line-height: 1.2;
+    background-color: #fff;
+    border: 5px solid #ff3366; /* Borde en rosa neón */
+    box-shadow: 0 0 15px rgba(255, 51, 102, 0.5); /* Sombra sutil rosa neón */
+    display: inline-block;
+}
+
+.service-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px; /* Aumenta el espaciado entre los elementos */
+}
+
+.service-item {
+    background-color: #fff;
+    padding: 30px; /* Aumenta el padding para más espacio interno */
+    border-radius: 20px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    max-width: 400px; /* Aumenta el ancho máximo del contenedor */
+    text-align: left;
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin: 0 20px; /* Aumenta el margen para más espacio alrededor */
+}
+
+.service-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #ff3366;
+}
+
+.service-item img {
+    width: 100%;
+    height: 250px; /* Aumenta la altura de las imágenes */
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.service-item h3 {
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #191414;
+    font-size: 1.5rem; /* Aumenta el tamaño de la fuente */
+}
+
+.service-item p {
+    font-size: 18px; /* Aumenta el tamaño de la fuente */
+    color: #666;
+    margin: 0;
+}
+
+/* Sección de Galería */
+.gallery {
+    text-align: center;
+    margin: 80px 0;
+}
+
+.gallery h2 {
+    font-weight: 700;
+    color: #ff3366;
+    margin: 60px 0;
+    padding: 25px 50px;
+    border-radius: 30px;
+    font-family: 'Lobster', cursive;
+    font-size: 3rem; /* Tamaño del título */
+    line-height: 1.2;
+    background-color: #fff;
+    border: 5px solid #ff3366; /* Borde en rosa neón */
+    box-shadow: 0 0 20px rgba(255, 51, 102, 0.5); /* Sombra más prominente */
+    display: inline-block;
+}
+
+.gallery-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px; /* Espaciado entre los elementos */
+}
+
+.gallery-item {
+    background-color: #fff;
+    padding: 20px; /* Espacio interno */
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    max-width: 600px; /* Ancho máximo del contenedor duplicado */
+    text-align: left;
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin: 0 20px; /* Espacio alrededor */
+    overflow: hidden; /* Oculta el desbordamiento de la imagen */
+}
+
+.gallery-item:hover {
+    transform: scale(1.05); /* Efecto de escalado */
+    box-shadow: 0 0 20px #ff3366;
+}
+
+.gallery-item img {
+    width: 100%; /* Ancho completo del contenedor */
+    height: 400px; /* Altura fija duplicada */
+    object-fit: cover; /* Ajusta la imagen para cubrir el contenedor */
+    border-radius: 20px;
+}
+
+.gallery-item h3 {
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #191414;
+    font-size: 1.5rem; /* Tamaño de la fuente del título */
+}
+
+.gallery-item p {
+    font-size: 1rem; /* Tamaño de la fuente del texto */
+    color: #666;
+    margin: 0;
+}
+
+
+
+/* Estilo para el título "Contáctanos" */
+.highlighted-title {
+    font-family: 'Lobster', cursive; /* Tipografía igual al botón Destacados */
+    font-size: 2.5rem; /* Tamaño de fuente */
+    font-weight: 700; /* Peso de la fuente */
+    color: #ff3366; /* Color del texto rosa neón */
+    background-color: #fff; /* Fondo blanco */
+    border: 5px solid #ff3366; /* Borde rosa neón */
+    border-radius: 30px; /* Bordes redondeados */
+    padding: 20px 40px; /* Relleno interno */
+    box-shadow: 0 0 15px rgba(255, 51, 102, 0.5); /* Sombra rosa neón */
+    display: inline-block; /* Mostrar como botón */
+    text-align: center; /* Texto centrado dentro del bloque */
+    line-height: 1.2; /* Altura de línea */
+}
+
+.contact h2:hover {
+    background: linear-gradient(135deg, #ff3366, #ff66b2); /* Invertir colores al pasar el cursor */
+    box-shadow: 0 0 30px #ff3366; /* Aumentar la sombra al pasar el cursor */
+}
+
+/* Estilos del botón de contacto */
+.contact-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #ff3366;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s;
+}
+
+.contact-button:hover {
+    background-color: #ff66b2;
+ border-radius: 15px;
+    box-shadow: 0 0 20px #ff3366;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    transition: background-color 0.3s;
+}
+
+.contact-item:hover {
+    background: linear-gradient(135deg, #ff3366, #ff66b2);
+}
+
+.contact-item img {
+    width: 50px; /* Tamaño del icono */
+    height: 50px;
+    object-fit: contain;
+    border-radius: 15px;
+}
+
+.contact-item h3 {
+    color: #fff;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.contact-item p {
+    color: #fff;
+    font-size: 16px;
+    margin: 0;
+}
+
+
+/* Ajustes de la sección de contacto */
+.contact-item {
+    background: linear-gradient(135deg, #ff66b2, #ff3366);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px #ff3366;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    transition: background-color 0.3s;
+}
+
+.contact-item:hover {
+    background: linear-gradient(135deg, #ff3366, #ff66b2);
+}
+
+.contact-item img {
+    width: 50px; /* Tamaño del icono */
+    height: 50px;
+    object-fit: contain;
+    border-radius: 15px;
+}
+
+.contact-item h3 {
+    color: #fff;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.contact-item p {
+    color: #fff;
+    font-size: 16px;
+    margin: 0;
+}
+
+/* Estilos para la página de Horarios */
+.horarios {
+    text-align: center;
+    padding: 60px 200px;
+    background: linear-gradient(135deg, #ff66b2, #ff3366);
+    border-radius: 30px;
+    box-shadow: 0 0 20px #ff3366;
+    margin: 60px 20;
+    
+}
+
+.horarios h2 {
+    font-family: 'Lobster', cursive;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #ff3366;
+    background-color: #ffffff;
+    border: 5px solid #ff3366;
+    border-radius: 30px;
+    padding: 20px 40px;
+    box-shadow: 0 0 15px rgba(255, 51, 102, 0.5);
+    margin-bottom: 40px;
+    display: inline-block; width: 500; height: 800;
+}
+
+table {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    border-collapse: separate;
+    border-spacing: 15px; /* Espacio entre celdas */
+}
+
+table th, table td {
+    padding: 15px 30px; /* Espacio dentro de las celdas */
+    border: 2px solid #ff3366;
+    border-radius: 20px; /* Bordes redondeados como los botones */
+    background-color: #fff;
+    color: #ff3366;
+    text-align: center;
+    font-weight: 700;
+    transition: background-color 0.3s, transform 0.3s;
+    cursor: pointer;
+}
+
+table th {
+    background-color: #ff3366;
+    color: #fff;
+    font-weight: 700;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #ffe0eb; /* Color rosa claro alterno */
+}
+
+table tbody tr:hover {
+    background-color: #ffb3c1; /* Color rosa más oscuro al pasar el cursor */
+    transform: scale(1.05); /* Efecto de aumento al pasar el cursor */
+}
+
+table td:hover {
+    background-color: #ff99cc; /* Color rosa más claro al pasar el cursor */
+}
+
+footer {
+    background-color: #ff66b2;
+    padding: 20px 0;
+    border-top: 5px solid #ff3366;
+    box-shadow: 0 0 10px #ff3366;
+    text-align: center;
+}
+
+
+/* Ajustes de la sección de contacto */
+.contact-item {
+    background: linear-gradient(135deg, #ff66b2, #ff3366);
+    padding: 20px;
+}   
+
+
+
+/* Sección de Políticas */
+.policies {
+    margin: 60px 0;
+    text-align: center;
+    background: linear-gradient(135deg, #ff66b2, #ff3366);
+    padding: 60px 20px;
+    border-radius: 30px;
+    box-shadow: 0 0 20px #ff3366;
+}
+
+.policies .container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.policies .section-title {
+    font-family: 'Lobster', cursive;
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 40px;
+}
+
+.policies .policy {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.policies .policy h3 {
+    font-weight: 700;
+    color: #ff3366;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.policies .policy p {
+    color: #666;
+    font-size: 16px;
+    margin: 0;
+}
+
+/* Estilos para la sección de Opiniones */
+.opinions {
+    background: linear-gradient(135deg, #ff66b2, #ff3366);
+    padding: 60px 20px;
+    border-radius: 30px;
+    box-shadow: 0 0 20px #ff3366;
+    margin: 60px 0;
+}
+
+.opinions .container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.opinions .section-title {
+    font-family: 'Lobster', cursive; /* Tipografía decorativa */
+    font-size: 2.5rem; /* Tamaño de fuente */
+    font-weight: 700; /* Peso de la fuente */
+    color: #fff; /* Color del texto blanco */
+    text-align: center; /* Texto centrado */
+    background-color: #ff3366; /* Fondo rosa neón */
+    border: 5px solid #ff66b2; /* Borde rosa neón */
+    border-radius: 30px; /* Bordes redondeados */
+    padding: 20px 40px; /* Relleno interno */
+    box-shadow: 0 0 15px rgba(255, 51, 102, 0.5); /* Sombra rosa neón */
+    margin-bottom: 40px; /* Margen inferior */
+}
+
+.opinion-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Espaciado entre los items */
+}
+
+.opinion-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    text-align: center; /* Texto centrado dentro de cada item */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.opinion-item:hover {
+    transform: scale(1.05); /* Efecto de escala al pasar el cursor */
+    box-shadow: 0 0 15px #ff3366;
+}
+
+/* Estilo específico para las imágenes en la sección de Opiniones */
+.opinions .opinion-item img {
+    width: 150px; /* Tamaño del avatar */
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%; /* Bordes redondeados */
+    margin-bottom: 15px;
+}
+
+.opinion-item h3 {
+    font-weight: 700;
+    color: #ff3366;
+    margin-bottom: 10px;
+}
+
+.opinion-item p {
+    font-size: 16px;
+    color: #666;
+}
+
+
+/* Estilos del pie de página */
+footer {
+    background-color: #ff66b2;
+    padding: 20px 0;
+    border-top: 5px solid #ff3366;
+    box-shadow: 0 0 10px #ff3366;
+    text-align: center;
+}
+
+/* Estilos del botón de red social */
+.social-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 15px; /* Espacio arriba del botón */
+    background-color: #ff3366; /* Color de fondo rosa neón */
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s;
+}
+
+.social-button:hover {
+    background-color: #ff66b2;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+}
+
+footer p {
+    margin: 0;
+    color: #fff;
+    font-size: 14px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
